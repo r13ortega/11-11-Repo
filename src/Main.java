@@ -7,13 +7,7 @@ public class Main {
     static ArrayList<Product> product = new ArrayList<>();
 
     public static void main(String[] args) {
-        Product newie = new Product("beef", 3.99, true);
-        product.add(newie);
-        product.get(0).print();
-        //create();
-        update();
-        product.get(0).print();
-        //product.get(1).print();
+
     }
 
     public static void create(){
