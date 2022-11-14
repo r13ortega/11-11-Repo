@@ -24,7 +24,8 @@ public class Main {
                 "Type (1) Toys\n" +
                 "Type (2) Electronics\n" +
                 "Type (3) Clothing");
-        String answerNum = scan.nextLine();
+        int answerNum = scan.nextInt();
+        scan.nextLine();
         switch (answerNum){
             case 1:
                 Toys nameToy = new Toys(name, price, inStock);
