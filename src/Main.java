@@ -7,8 +7,13 @@ public class Main {
     static ArrayList<Product> product = new ArrayList<>();
 
     public static void main(String[] args) {
-
-
+        Product newie = new Product("beef", 3.99, true);
+        product.add(newie);
+        product.get(0).print();
+        //create();
+        update();
+        product.get(0).print();
+        //product.get(1).print();
     }
 
     public static void create(){
@@ -42,5 +47,25 @@ public class Main {
         }
     }
 
+    public static void update(){
+        System.out.println("Please enter in the  Name of the Product you wish to Update...");
+        String name = scan.nextLine();
+        for (Product prod: product) {
+            if (name.equalsIgnoreCase(prod.name)){
+                System.out.println("Please enter in the new Name of the Product");
+                String namey = scan.nextLine();
+                System.out.println("Is this Product in Stock?\n" +
+                        "(true) ir (false)");
+                boolean inStock = scan.nextBoolean();
+                scan.nextLine();
+                System.out.println("What is the price of the Product?");
+                double pricey = scan.nextDouble();
+                scan.nextLine();
+                prod.name = namey;
+                prod.inStock = inStock;
+                prod.price = pricey;
+            }
+        }
+    }
 
 }
