@@ -43,4 +43,21 @@ public class Main {
     }
 
 
+
+        public static void readProduct(){
+
+        }
+
+
+        public static void updateProduct(){
+
+
+        }
+
+        public static void deleteProduct(){
+
+        }
+
+
+
 }
