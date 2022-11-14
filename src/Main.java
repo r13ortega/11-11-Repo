@@ -40,7 +40,7 @@ public class Main {
                 product.add(nameCloth);
                 break;
         }
-//        Product nameProduct = new Product(name, price, inStock);
-//        product.add(nameProduct);
     }
+
+
 }
