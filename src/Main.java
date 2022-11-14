@@ -20,7 +20,26 @@ public class Main {
         System.out.println("Is the item in stock?\n" +
                 "(true) or (false)");
         boolean inStock = scan.nextBoolean();
-        Product nameProduct = new Product(name, price, inStock);
-        product.add(nameProduct);
+        System.out.println("What kind of product do you have?\n" +
+                "Type (1) Toys\n" +
+                "Type (2) Electronics\n" +
+                "Type (3) Clothing");
+        String answerNum = scan.nextLine();
+        switch (answerNum){
+            case 1:
+                Toys nameToy = new Toys(name, price, inStock);
+                product.add(nameToy);
+                break;
+            case 2:
+                Electronics nameElec = new Electronics(name, price, inStock);
+                product.add(nameElec);
+                break;
+            case 3:
+                Clothing nameCloth = new Clothing(name, price, inStock);
+                product.add(nameCloth);
+                break;
+        }
+//        Product nameProduct = new Product(name, price, inStock);
+//        product.add(nameProduct);
     }
 }

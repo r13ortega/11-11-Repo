@@ -12,6 +12,10 @@ public class Product {
         this.inStock = inStock;
     }
 
+    public Product() {
+
+    }
+
     public void print(){
         System.out.println("---- " + this.name + " ----" + this.price + " ---- " + this.inStock);
     }
